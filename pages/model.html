@@ -119,7 +119,7 @@
                 <ul class="s_tourer">
                     <li><a href="#x"><img src="../images/h2sxsxe.png" alt=""></a></li>
                     <li><a href="#x"><img src="../images/z1000sx.png" alt=""></a></li>
-                    <li class="padding_01"></li>
+                    <li><img src="../images/z1000sx.png" alt="" class="none"></li>
                 </ul>
 
                 <div class="price_box">
@@ -178,8 +178,8 @@
                 
                 <ul>
                     <li><a href="#x"><img src="../images/z650rs_50th.png" alt=""></a></li>
-                    <li class="padding_01"></li>
-                    <li class="padding_01"></li>
+                    <li><img src="../images/z650rs_50th.png" alt="" class="none"></li>
+                    <li><img src="../images/z650rs_50th.png" alt="" class="none"></li>
                 </ul>
 
                 <div class="price_box">
@@ -213,7 +213,7 @@
                 <ul class="a_tourer">
                     <li><a href="#x"><img src="../images/versis1000.png" alt=""></a></li>
                     <li><a href="#x"><img src="../images/versis650.png" alt=""></a></li>
-                    <li class="padding_01"></li>
+                    <li><img src="../images/versis650.png" alt="" class="none"></li>
                 </ul>
 
                 <div class="price_box">
@@ -245,9 +245,8 @@
                 </div>
                 <ul class="m_classic">
                     <li><a href="#x"><img src="../images/w800_grey.png" alt=""></a></li>
-                    <li class="padding_01"></li>
-                    <li class="padding_01"></li>
-                    
+                    <li><img src="../images/w800_grey.png" alt="" class="none"></li>
+                    <li><img src="../images/w800_grey.png" alt="" class="none"></li>
                 </ul>
                 
                 <div class="price_box">
@@ -280,9 +279,8 @@
                 </div>
                 <ul class="u_cruiser">
                     <li><a href="#x"><img src="../images/vulcan_black.jpg" alt=""></a></li>
-                    <li class="padding_01"></li>
-                    <li class="padding_01"></li>
-
+                    <li><img src="../images/vulcan_black.jpg" alt="" class="none"></li>
+                    <li><img src="../images/vulcan_black.jpg" alt="" class="none"></li>
                 </ul>
 
                 <div class="price_box">
@@ -355,6 +353,24 @@
             }
         })
 
+
+        $(window).scroll(function(){
+            var scollValue = $(document).scrollTop()
+            if(scollValue > 450){
+                $('.s_naked').fadeIn()
+            }else{
+                $('.s_naked').fadeOut()
+            }
+        })
+
+        $(window).scroll(function(){
+            var scollValue = $(document).scrollTop()
+            if(scollValue > 850){
+                $('.s_tourer').fadeIn()
+            }else{
+                $('.s_tourer').fadeOut()
+            }
+        })
 
     </script>
 </body>

@@ -66,6 +66,10 @@ body {
     line-height: 40px;
 }
 
+.manual li p:hover {
+    color: #69be28;
+}
+
 .top img {
     width: 307px;
 }
@@ -178,6 +182,9 @@ body {
 
 .best_model {
     width: 100%;
+    padding: 0 30px;
+    
+
 }
 
 .m_bike {
@@ -195,15 +202,20 @@ body {
 
 .bike_slick {
     display: flex;
+    padding: 0 30px;
+    
+    overflow: hidden;
 }
 
 .bike_slick li {
     cursor: pointer;
+    width: 100%;
+    
 }
 
 .bike_slick li a {
     display: block;
-    width: 486px;
+    width: 100%;
     height: 413px;
     padding: 15px;
     position: relative;
@@ -229,6 +241,7 @@ body {
 .news_event {
     width: 100%;
     padding: 0 30px;
+    
     height: 505px;
 }
 
@@ -243,11 +256,11 @@ body {
 .btns {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .btns li {
     display: block;
-    width: 100%;
     padding: 7.5px;
     margin-top: 20px;
     position: relative;
