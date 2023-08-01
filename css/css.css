@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fff;
+    position: relative;
+}
+
+.wrap {
+    width: 100%;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.u_line img {
+    width: 100%;
+}
+
+
+.top {
+    width: 100%;
+    display: flex;
+    padding: 16px 30px;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.manual li{
+    display: flex;
+}
+
+.manual li a {
+    display: block;
+}
+
+.manual li a p{
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.manual > li > p {
+    line-height: 40px;
+}
+
+.top img {
+    width: 307px;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li a {
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+/* main */
+
+.main {
+    width: 100%;
+}
+
+.top_con {
+    position: relative;
+    width: 100%;
+    height: 1216px;
+}
+
+.t_c_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.t_c_btn a {
+    display: block;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    margin: 15px 0;
+}
+
+.t_c_btn a:hover {
+    background-color: #69be28;
+    border: 0;
+}
+
+
+.t_c_btn a:hover span {
+    background-color: #69be28;
+    color: #000;
+}
+
+
+.t_c_btn a span{
+    color: #fff;
+}
+
+
+.youtube {
+    position: absolute;
+}
+
+
+
+.mid_tab {
+    width: 100%;
+    height: 145px;
+    background-color: #000;
+}
+
+.mid {
+    width: 100%;
+}
+
+.mid ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.mid ul li {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.mid ul li a {
+    display: block;
+    height: 35px;
+    margin: 4px 0;
+}
+
+
+
+.mid ul li p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sec_line {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.sec_line ul :first-child {
+    border-bottom: 1px solid #69be28;
+} 
+
+/* best_model */
+
+.best_model {
+    width: 100%;
+}
+
+.m_bike {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.title h2{
+    font-size: 48px;
+}
+
+.title p{
+    font-size: 16px;
+}
+
+.bike_slick {
+    display: flex;
+}
+
+.bike_slick li {
+    cursor: pointer;
+}
+
+.bike_slick li a {
+    display: block;
+    width: 486px;
+    height: 413px;
+    padding: 15px;
+    position: relative;
+}
+
+.bike_slick li p{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 479px;
+    text-align: center;
+}
+
+.bike_slick li a img{
+    height: 343px;
+    width: 453px;
+}
+
+/* NEWS & EVENT */
+
+.news_event {
+    width: 100%;
+    padding: 0 30px;
+    height: 505px;
+}
+
+.r_news {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+}
+
+.btns li {
+    display: block;
+    width: 100%;
+    padding: 7.5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.btns li a {
+}
+
+.btns li a img {
+    width: 360px;
+    height: 273px;
+    border: 1px solid #69be28;
+    border-bottom: 0;
+    /* display: none; */
+}
+
+.btns li p {
+    position: absolute;
+    width: 360px;
+    font-size: 14px;
+    padding: 20px;
+    letter-spacing: -0.9px;
+    border: 1px solid #69be28;
+    border-top: 0;
+    z-index: 1;
+    bottom: -50px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+.f_contents {
+    width: 100%;
+}
+
+.f_up_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_logo img {
+    width: 249px;
+    height: 51px;
+}
+
+.f_link img {
+    width: 249px;
+    height: 72px;
+}
+
+.copy_right {
+    text-align: center;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.f_down_menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.sns {
+    display: flex;
+    gap: 15px;
+}
+
+.sns li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.yak {
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+}
+
+
+.to_top_btns {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.to_top_btns img {
+    width: 73px;
+    height: 73px;
+}
+

@@ -1,0 +1,295 @@
+
+.m_main {
+    width: 100%;
+}
+
+.m_t_con {
+    width: 100%;
+    position: relative;
+    height: 306px;
+}
+
+.m_t_con > ul {
+    width: 100%;
+    height: 288px;
+    background-color: #000;
+    
+}
+
+.fades {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fades li a{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.fades li a img {
+    text-align: center;
+}
+
+
+
+.empty {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.m_t_con p {
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    font-size: 64px;
+    font-weight: bold;
+    font-style: oblique;
+    line-height: 65px;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.model_title {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 47px;
+    margin-top: 15px;
+}
+
+.model_title img {
+    width: 250px;
+    height: 55px;
+}
+
+
+.models_type > ul > li > a img {
+    width: 100%;
+    height: 100%;
+    scale: 100%;
+    transition: all 0.5s;
+}
+
+.models_type > ul {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 47px;
+    display: flex;
+    position: relative;
+    
+}
+
+.models_type > ul > li:hover img {
+    scale: 105%;
+    transition: all 0.5s;
+}
+
+.price_box {
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 47px;
+    justify-content: space-between;
+}
+
+.price_box ul {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.price_box ul li:nth-child(1) p {
+    font-size: 16px;
+    letter-spacing: -1px;
+
+}
+
+.price_box ul li:nth-child(2) p {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+
+.price_box ul li:nth-child(3) p {
+    color: #69be28;
+}
+
+.padding_01 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.s_m_list img {
+}
+
+
+
+   /*  */
+/* service */
+  /*  */
+
+
+.sec_line_p {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.sec_line_p ul :first-child {
+    border-bottom: 3px solid #69be28;
+}
+
+/* 메인 */
+
+.s_title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 30px;
+    
+}
+
+.s_c_title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.n_text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.n_text span{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.s_m_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.s_m_list img{
+    margin-top: 20px;
+    width: 217px;
+    height: 67px;
+}
+
+
+.s_m_list ul {
+    display: block;
+    height: 112px;
+    text-align: center;
+}
+
+.s_m_list ul li:nth-child(1) {
+    color: #69be28;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.s_m_list ul li:nth-child(2) {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.s_m_list ul li:nth-child(3) {
+    font-size: 16px;
+}
+
+
+/* question */
+
+.question {
+    padding: 30px 77px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text_box {
+    cursor: pointer;
+    position: relative;
+}
+
+.text_box p {
+    border-top: 1px solid #ddd;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+}
+
+h3.active::after {
+    transform: rotate(225deg);
+    transition: transform 0.3s;
+}
+
+h3 {
+    padding: 14px 10px;
+    border-top: 1px solid #888;
+}
+
+.question .text_box:last-child h3 {
+    border-bottom: 1px solid #888;
+}
+
+
+.text {
+    padding: 12px;
+    display: none;
+}
+
+/* 카카오톡 문의 */
+
+.qna > div {
+    display: block;
+    width: 707px;
+    margin: 0 auto;
+}
+
+.s_g_title {
+    color: #69be28;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.qna {
+    width: 100%;
+    text-align: center;
+}
+
+.qna img {
+    width: 707px;
+}
+
+.d_kakao {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
