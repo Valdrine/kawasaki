@@ -43,8 +43,10 @@ body {
 
 .top {
     width: 100%;
+    max-width: 1500px;
     display: flex;
     padding: 16px 30px;
+    margin: 0 auto;
     justify-content: space-between;
     color: #fff;
 }
@@ -78,12 +80,46 @@ body {
     display: flex;
 }
 
-.gnb li a {
+.gnb > li > a {
     display: block;
     padding: 0 30px;
     line-height: 40px;
     font-size: 15px;
 }
+
+.gnb > li > a:hover {
+    color: #69be28;
+}
+
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > ul {
+    position: absolute;
+    width: 160px;
+    z-index: 1;
+    background-color: #000;
+    color: #fff;
+}
+
+.g_wrap {
+    display: none;
+}
+
+
+.gnb > li > ul > li > a{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.gnb > li > ul > li > a:hover{
+    color: #69be28;
+}
+
+
 
 /* main */
 
@@ -99,8 +135,9 @@ body {
 
 .t_c_btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    
+    top: 58%;
+    left: 45%;
     z-index: 1;
 }
 
@@ -142,6 +179,8 @@ body {
 
 .mid {
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .mid ul {
@@ -189,6 +228,8 @@ body {
 
 .m_bike {
     width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
@@ -241,12 +282,13 @@ body {
 .news_event {
     width: 100%;
     padding: 0 30px;
-    
     height: 505px;
 }
 
 .r_news {
     width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .title {
@@ -255,6 +297,7 @@ body {
 
 .btns {
     width: 100%;
+    max-width: 1500px;
     display: flex;
     justify-content: center;
 }
@@ -300,6 +343,8 @@ body {
 
 .f_contents {
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .f_up_menu {
@@ -358,6 +403,7 @@ body {
 }
 
 .to_top_btns img {
+    
     width: 73px;
     height: 73px;
 }

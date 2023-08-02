@@ -32,19 +32,45 @@
 
                 <ul class="gnb">
                     <li>
-                        <a href="./pages/model.html">모델안내</a>
+                        <a href="../pages/model.html">모델안내</a>
+                        <ul class="g_wrap">
+                            <li>
+                                <a href="#x"><p>모터사이클</p><span>></span></a>
+                            </li>
+                            <li>
+                                <a href="#x"><p>제트스키</p><span>></span></a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#x">딜러찾기</a>
+                        <a href="../pages/find.html">딜러찾기</a>
+                        <ul class="g_wrap">
+                            <li><a href="#x"><p>모터사이클 대리점</p></a></li>
+                            <li><a href="#x"><p>제트스키 대리점</p></a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="./pages/service.html">서비스</a>
+                        <a href="../pages/service.html">서비스</a>
+                        <ul class="g_wrap">
+                            <li>
+                                <a href="#x">고객센터</a>
+                            </li>
+                            <li>
+                                <a href="#x">구매보증</a>
+                            </li>
+                            <li>
+                                <a href="#x">리콜정보</a>
+                            </li>
+                            <li>
+                                <a href="#x">다운로드</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#x">뉴스&이벤트</a>
+                        <a href="../pages/event.html">뉴스&이벤트</a>
                     </li>
                     <li>
-                        <a href="#x">히스토리</a>
+                        <a href="https://www.kawasaki-cp.khi.co.jp/Z50th/" target="_blank">히스토리</a>
                     </li>
                 </ul>
 
@@ -138,7 +164,7 @@
         </div>
 
         <div class="footer">
-            <div class="f_contetns">
+            <div class="f_contents">
                 <div class="f_up_menu">
                     <div class="f_logo">
                         <img src="./images/f_logo.png" alt="">
@@ -191,6 +217,15 @@
             $('[data-vbg]').youtube_background(); 
         });
 
+        // 헤더
+
+        $('.gnb li').hover(function(){
+            $(this).find('ul').show()
+        }, function(){
+            $(this).find('ul').hide()
+        })
+
+
         // 바이크 슬릭 슬라이드
         $('.bike_slick').slick({
             slidesToShow: 3,
@@ -210,6 +245,8 @@
             }else {
                 $('.header').removeClass('fixed')
             }
+
+            
 
             if(scrollTopValue > 1000) {
                 $('.to_top_btns').fadeIn('fast')

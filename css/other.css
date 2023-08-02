@@ -6,7 +6,9 @@
 .m_t_con {
     width: 100%;
     position: relative;
-    height: 306px;
+    height: 288px;
+    background-color: #000;
+    margin: 0 auto;
 }
 
 .m_t_con > ul {
@@ -17,6 +19,8 @@
 }
 
 .fades {
+    width: 100%;
+    max-width: 1600px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -55,27 +59,37 @@
 }
 
 .model_title {
-    width: 100%;
-    padding: 0 30px;
-    
+    width: 1500px;
+    padding: 0 30px 30px 30px;
+    margin: 0 auto;
     margin-top: 15px;
+    position: relative;
 }
 
 .model_title img {
     width: 250px;
     height: 55px;
+    position: absolute;
+    z-index: 10;
 }
 
+.models_type > ul > li {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 
 .models_type > ul > li img {
     width: 100%;
-    height: 100%;
     scale: 100%;
-    transition: all 0.5s;
+    position: absolute;
+    transition: scale 0.5s;
 }
 
 .models_type > ul {
-    width: 100%;
+    width: 1500px;
+    height: 330px;
+    margin: 0 auto;
     padding: 0 30px;
     display: flex;
     position: relative;
@@ -83,15 +97,16 @@
 }
 
 .models_type > ul > li:hover img {
-    scale: 105%;
-    transition: all 0.5s;
+    scale: 110%;
+    transition: scale 0.5s;
 }
 
 .price_box {
     display: flex;
-    width: 100%;
+    width: 1500px;
     padding: 0 30px;
-    
+    margin: 0 auto;
+    padding-bottom: 20px;
     justify-content: space-between;
 }
 
@@ -209,6 +224,7 @@
 .question {
     padding: 30px 77px;
     width: 100%;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -281,6 +297,33 @@ h3 {
 
 .d_kakao {
     text-align: center;
+}
+
+
+/* find */
+
+.find_main {
+    display: block;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+
+/* event */
+
+.e_main {
+    width: 100%;
+}
+
+.n_e {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.n_e > ul {
+    padding-bottom: 40px;
 }
 
 

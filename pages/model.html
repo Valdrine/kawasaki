@@ -49,9 +49,9 @@
                     <img src="../images/super_sport.png" alt="">
                 </div>
                 <ul class="s_sport">
-                    <li><a href="#x"><img src="../images/zx10r_green.png" alt=""></a></li>
+                    <li><a href="#x"><img src="../images/zx10r_green.png" alt=""><img src="../images/zx10r_black.png" alt=""></a></li>
                     <li><a href="#x"><img src="../images/ninja650.png" alt=""></a></li>
-                    <li><a href="#x"><img src="../images/ninja400_green.png" alt=""></a></li>
+                    <li><a href="#x"><img src="../images/ninja400_green.png" alt=""><img src="../images/ninja400_black.png" alt=""></a></li>
                 </ul>
 
                 <div class="price_box">
@@ -117,8 +117,8 @@
                     <img src="../images/sport_tourer.png" alt="">
                 </div>
                 <ul class="s_tourer">
-                    <li><a href="#x"><img src="../images/h2sxsxe.png" alt=""></a></li>
-                    <li><a href="#x"><img src="../images/z1000sx.png" alt=""></a></li>
+                    <li><a href="#x"><img src="../images/h2sxsxe.png" alt=""><img src="../images/h2sxse_box.png" alt=""></a></li>
+                    <li><a href="#x"><img src="../images/z1000sx.png" alt=""><img src="../images/z1000sx_box.png" alt=""></a></li>
                     <li><img src="../images/z1000sx.png" alt="" class="none"></li>
                 </ul>
 
@@ -153,7 +153,7 @@
                 <ul class="r_sport">
                     <li><a href="#x"><img src="../images/z900rsse.png" alt=""></a></li>
                     <li><a href="#x"><img src="../images/z900rs.png" alt=""></a></li>
-                    <li><a href="#x"><img src="../images/z650rs_green.png" alt=""></a></li>
+                    <li><a href="#x"><img src="../images/z650rs_green.png" alt=""><img src="../images/z650rs_grey.png" alt=""></a></li>
                 </ul>
 
                 <div class="price_box">
@@ -278,7 +278,7 @@
                     <img src="../images/urban_cruiser.png" alt="">
                 </div>
                 <ul class="u_cruiser">
-                    <li><a href="#x"><img src="../images/vulcan_black.jpg" alt=""></a></li>
+                    <li><a href="#x"><img src="../images/vulcan_black.jpg" alt=""><img src="../images/vulcan_grey.jpg" alt=""></a></li>
                     <li><img src="../images/vulcan_black.jpg" alt="" class="none"></li>
                     <li><img src="../images/vulcan_black.jpg" alt="" class="none"></li>
                 </ul>
@@ -307,18 +307,13 @@
                         <li>　</li>
                     </ul>
                 </div>
-
-
-
             </div>
-
         </div>
 
         <div class="footer"></div>
 
         <div class="up_button"></div>
     </div>
-    
     
     <script>
         // 헤더 푸터 불러오기
@@ -356,7 +351,7 @@
 
         $(window).scroll(function(){
             var scollValue = $(document).scrollTop()
-            if(scollValue > 450){
+            if(scollValue > 100){
                 $('.s_naked').fadeIn()
             }else{
                 $('.s_naked').fadeOut()
@@ -365,12 +360,26 @@
 
         $(window).scroll(function(){
             var scollValue = $(document).scrollTop()
-            if(scollValue > 850){
+            if(scollValue > 720){
                 $('.s_tourer').fadeIn()
             }else{
                 $('.s_tourer').fadeOut()
             }
         })
+
+        // 업버튼
+
+        $('.up_button').on('click', function(){
+            $('html, body').animate({scrollTop: 0 }, 'fast')
+        })
+
+        $('.models_type  ul li img').eq(1).hide()
+        $('.models_type > ul li').hover(function(){
+            $(this).find('img').eq(1).stop().fadeIn()
+        }, function(){
+            $(this).find('img').eq(1).stop().fadeOut()
+        })
+
 
     </script>
 </body>

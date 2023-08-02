@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kawasaki bike event</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/youtube-background@1.0.14/jquery.youtube-background.min.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/b1ed7f248f.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/other.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+
+        <div class="e_main">
+            <div class="n_e">
+                <ul class="btns">
+                    <li><a href="#x"><img src="../images/bike_img_01.jpg" alt=""></a><p><월간 더 모토 시승기>A2 ASSASIN - KWASAKI NINJA 400</p></li>
+                    <li><a href="#x"><img src="../images/jeju.jpg" alt=""></a><p>제주도에도 가와사키가 있습니다</p></li>
+                    <li><a href="#x"><img src="../images/pro_motion.jpg" alt=""></a><p>가와사키 코리아 10주년 기념 프로모션</p></li>
+                    <li><a href="#x"><img src="../images/buth.jpg" alt=""></a><p>슈퍼레이스에 닌자컵 홍보부스 추가</p></li>
+                </ul>
+                <ul class="btns">
+                    <li><a href="#x"><img src="../images/bike_img_01.jpg" alt=""></a><p><월간 더 모토 시승기>A2 ASSASIN - KWASAKI NINJA 400</p></li>
+                    <li><a href="#x"><img src="../images/jeju.jpg" alt=""></a><p>제주도에도 가와사키가 있습니다</p></li>
+                    <li><a href="#x"><img src="../images/pro_motion.jpg" alt=""></a><p>가와사키 코리아 10주년 기념 프로모션</p></li>
+                    <li><a href="#x"><img src="../images/buth.jpg" alt=""></a><p>슈퍼레이스에 닌자컵 홍보부스 추가</p></li>
+                </ul>
+                <ul class="btns">
+                    <li><a href="#x"><img src="../images/bike_img_01.jpg" alt=""></a><p><월간 더 모토 시승기>A2 ASSASIN - KWASAKI NINJA 400</p></li>
+                    <li><a href="#x"><img src="../images/jeju.jpg" alt=""></a><p>제주도에도 가와사키가 있습니다</p></li>
+                    <li><a href="#x"><img src="../images/pro_motion.jpg" alt=""></a><p>가와사키 코리아 10주년 기념 프로모션</p></li>
+                    <li><a href="#x"><img src="../images/buth.jpg" alt=""></a><p>슈퍼레이스에 닌자컵 홍보부스 추가</p></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="footer"></div>
+
+        <div class="up_button"></div>
+    </div>
+    
+    <script>
+        // 헤더 푸터 불러오기
+        $(function(){
+            $('.header').load('/pages/header.html')
+
+            $('.footer').load('/pages/footer.html')
+
+            $('.up_button').load('/pages/up_btn.html')
+        })
+
+        // 페이드
+        var i = 0
+        $('.fades li').eq(i).show()
+        setInterval(function(){
+            var j = (i+1)%4
+
+            $('.fades li').eq(i).fadeOut()
+            $('.fades li').eq(j).fadeIn()
+
+            i = j
+
+        }, 3000)
+
+        // 
+        $(window).scroll(function(){
+            var scrollTopValue = $(document).scrollTop()
+            if(scrollTopValue > 1000) {
+                $('.to_top_btns').fadeIn('fast')
+            }else{
+                $('.to_top_btns').fadeOut('fast')
+            }
+        })
+
+
+        $(window).scroll(function(){
+            var scollValue = $(document).scrollTop()
+            if(scollValue > 100){
+                $('.s_naked').fadeIn()
+            }else{
+                $('.s_naked').fadeOut()
+            }
+        })
+
+        $(window).scroll(function(){
+            var scollValue = $(document).scrollTop()
+            if(scollValue > 720){
+                $('.s_tourer').fadeIn()
+            }else{
+                $('.s_tourer').fadeOut()
+            }
+        })
+
+        // 업버튼
+
+        $('.up_button').on('click', function(){
+            $('html, body').animate({scrollTop: 0 }, 'fast')
+        })
+
+        $('.models_type  ul li img').eq(1).hide()
+        $('.models_type > ul li').hover(function(){
+            $(this).find('img').eq(1).stop().fadeIn()
+        }, function(){
+            $(this).find('img').eq(1).stop().fadeOut()
+        })
+
+
+    </script>
+</body>
+</html>
